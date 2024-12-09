@@ -1,6 +1,10 @@
 # MegaCoreX
 [![Build Status](https://travis-ci.com/MCUdude/MegaCoreX.svg?branch=master)](https://travis-ci.com/MCUdude/MegaCoreX)
 
+This is almost a vanilla copy from MegaCoreX, but with an altered ISR routine for the serial port to allow sending and receiving 9bit serial data.
+
+This is modified from Nick Gammons 9-bit characters support.
+
 An Arduino core for ATmega4809, ATmega4808, ATmega3209, ATmega3208, ATmega1609, ATmega1608, ATmega809 and ATmega808. This megaAVR-0 chip family offers lots of features and peripherals at an incredible price point. The largest one, the ATmega4809 can be found in products like the Arduino Uno WiFi Rev2 and the Arduino Nano Every. Some of their key features include multiple serial ports, SPI and i2c interfaces, built-in programmable logic, up to 16 analog input pins, and an analog comparator with a built-in programmable voltage reference and hysteresis and much more!
 
 Compared to older AVR families they also have more advanced and accurate internal oscillators which can provide base frequencies of 16 and 20 MHz. These can then be divided down internally to reduce the processor speed and power consumption. This means in most applications an external clock isn't necessary anymore. You can read more about clocks and clock frequencies in the [Supported clock frequencies](#supported-clock-frequencies) section.
